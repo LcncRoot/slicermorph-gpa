@@ -147,3 +147,5 @@ BSD 2-Clause License. See [LICENSE](LICENSE) for details.
 ## Acknowledgments
 
 This library is part of the [SlicerMorph](https://slicermorph.github.io/) project, supported by NSF Advances in Bioinformatics grants (DBI-1759883, DBI-1759637, DBI-1759839) awarded to Murat Maga (University of Washington), Adam Summers (University of Washington), and Douglas Boyer (Duke University).
+Inspired by papers in paleontology such as https://onlinelibrary.wiley.com/doi/10.1111/j.1420-9101.2011.02427.x
+
