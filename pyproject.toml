@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "slicermorph-gpa"
+version = "0.1.0"
+description = "Generalized Procrustes Analysis library extracted from SlicerMorph"
+readme = "README.md"
+license = "BSD-2-Clause"
+requires-python = ">=3.9"
+authors = [
+    { name = "SlicerMorph Project", email = "SlicerMorph@uw.edu" },
+]
+maintainers = [
+    { name = "Murat Maga", email = "maga@uw.edu" },
+]
+keywords = [
+    "morphometrics",
+    "procrustes",
+    "GPA",
+    "landmarks",
+    "PCA",
+    "shape-analysis",
+    "biology",
+    "anthropology",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+json = ["pandas>=1.3"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+all = [
+    "slicermorph-gpa[json,dev]",
+]
+
+[project.urls]
+Homepage = "https://github.com/SlicerMorph/SlicerMorph"
+Documentation = "https://github.com/SlicerMorph/slicermorph-gpa"
+Repository = "https://github.com/SlicerMorph/slicermorph-gpa"
+Issues = "https://github.com/SlicerMorph/slicermorph-gpa/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/slicermorph_gpa"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+target-version = "py39"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]

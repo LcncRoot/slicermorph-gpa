@@ -1,0 +1,8 @@
+# Markups fiducial file version = 4.11
+# CoordinateSystem = LPS
+# columns = id,x,y,z,ow,ox,oy,oz,vis,sel,lock,label,desc,associatedNodeID
+vtkMRMLMarkupsFiducialNode_0,9.8,19.5,4.7,0,0,0,1,1,1,0,Nasion,,
+vtkMRMLMarkupsFiducialNode_1,14.5,17.9,4.4,0,0,0,1,1,1,0,Bregma,,
+vtkMRMLMarkupsFiducialNode_2,7.6,21.3,5.6,0,0,0,1,1,1,0,Lambda,,
+vtkMRMLMarkupsFiducialNode_3,11.4,24.6,3.5,0,0,0,1,1,1,0,Opisthion,,
+vtkMRMLMarkupsFiducialNode_4,11.1,14.4,6.7,0,0,0,1,1,1,0,Basion,,
