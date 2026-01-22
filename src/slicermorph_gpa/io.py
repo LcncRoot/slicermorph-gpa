@@ -11,10 +11,8 @@ coordinates.
 
 from __future__ import annotations
 
-import fnmatch
 import glob as glob_module
 import json
-import os
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -271,9 +269,7 @@ def _write_fcsv(
         # Write header
         f.write("# Markups fiducial file version = 4.11\n")
         f.write("# CoordinateSystem = LPS\n")
-        f.write(
-            "# columns = id,x,y,z,ow,ox,oy,oz,vis,sel,lock,label,desc,associatedNodeID\n"
-        )
+        f.write("# columns = id,x,y,z,ow,ox,oy,oz,vis,sel,lock,label,desc,assocNodeID\n")
 
         for i in range(n_landmarks):
             x, y, z = landmarks[i]

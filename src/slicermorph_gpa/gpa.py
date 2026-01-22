@@ -117,8 +117,8 @@ def procrustes_distance(
     """Compute Procrustes distances from each specimen to a reference shape.
 
     Args:
-        landmarks: Aligned landmark coordinates, shape (n_landmarks, n_dims, n_specimens)
-        reference: Reference shape (typically mean shape), shape (n_landmarks, n_dims)
+        landmarks: Aligned coordinates, shape (n_landmarks, n_dims, n_specimens)
+        reference: Reference shape (e.g. mean), shape (n_landmarks, n_dims)
 
     Returns:
         Array of Procrustes distances, shape (n_specimens,)

@@ -44,7 +44,7 @@ def pca(
     """Perform Principal Component Analysis on aligned landmark data.
 
     Args:
-        landmarks: Aligned landmark coordinates, shape (n_landmarks, n_dims, n_specimens)
+        landmarks: Aligned coordinates, shape (n_landmarks, n_dims, n_specimens)
         n_components: Number of components to retain. If None, retains
             min(n_specimens, n_landmarks * n_dims) components.
 
