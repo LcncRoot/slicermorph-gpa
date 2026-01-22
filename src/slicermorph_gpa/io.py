@@ -269,7 +269,7 @@ def _write_fcsv(
         # Write header
         f.write("# Markups fiducial file version = 4.11\n")
         f.write("# CoordinateSystem = LPS\n")
-        f.write("# columns = id,x,y,z,ow,ox,oy,oz,vis,sel,lock,label,desc,assocNodeID\n")
+        f.write("# columns = id,x,y,z,ow,ox,oy,oz,vis,sel,lock,label,desc,assoc\n")
 
         for i in range(n_landmarks):
             x, y, z = landmarks[i]
